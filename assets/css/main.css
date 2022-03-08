@@ -31,6 +31,8 @@ footer, header, hgroup, menu, nav, section {
 
 body {
 	line-height: 1;
+	display: flex;
+	justify-content: center;
 }
 
 ol, ul {
@@ -1164,6 +1166,7 @@ input, select, textarea {
 			background-size: cover;
 			background-repeat: no-repeat;
 			z-index: 1;
+
 		}
 
 		body.is-article-visible #bg:after {
@@ -1203,6 +1206,7 @@ input, select, textarea {
 		position: relative;
 		min-height: 100vh;
 		width: 100%;
+		max-width: 1200px;
 		padding: 4rem 2rem;
 		z-index: 3;
 	}
