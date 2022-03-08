@@ -58,9 +58,9 @@
 							<article id="about">
 								<h2 class="major">About</h2>
 								<span class="image main"><img src="images/portfolio-about.jpg" alt="" /></span>
-								<p>As a student of life and driven by figuring out how things work, I'm a naturally curious person and try to draw as much insight by observing and tinkering. My background is in finance, economics, and marketing. After spending part of my career specialized in advertising, I was fascinated by the numerous ways technology can augment daily experiences. Seeing the way modern applications make creative use of user and aggregated data inspired me to join the world of software engineering to get closer to understanding what is possible.</p>
+								<p>As a student of life and driven by figuring out how things work, I'm a naturally curious person and try to draw as much insight by observing and tinkering. My background is in finance, economics, and marketing. After spending part of my career specialized in advertising, I was fascinated by the numerous ways technology can augment daily experiences. Seeing the way modern applications make creative use of data inspired me to join the world of software engineering to get closer to understanding what is possible.</p>
 
-								<p>My time in advertising has given me some invaluable skills. It helped shape my ability to consider holistically about the goal of a product and use insights from data intense sources to craft strategic approaches. I love working within teams for the reason that there is only so much capacity a single person has. To truly bring out the full potential of a product, collaboration is essential.</p>
+								<p>My time in advertising has given me some invaluable skills around ad tech, media planning, strategy, and data analytics. It helped shape my ability to consider the holistic goal of a product and to use insights from aggregated data to craft informed approaches. Additionally, I love working within teams for the reason that there is only so much capacity a single person has. To truly bring out the full potential of a product, I've found collaboration to be essential.</p>
 								
 								<p>I'm always open to connecting so feel free to <a href="#contact">contact me</a>! You can also check out some of the <a href="#projects">projects</a> I've worked on or view my <a href="https://drive.google.com/file/d/1HeLvJxYtVH8ASIs036EruqSIYU2YXEfn/view?usp=sharing" target="_blank">resume</a>.</p>
 
@@ -123,25 +123,36 @@
 							<article id="projects">
 								<h2 class="major">Projects</h2>
 								
-								<h4 class="major">Spheres of Influence</h5>
-								<span class="image main"><img src="images/pic02.jpg" alt="" /></span>
-								<p>This data simulation is meant to visualize the virality of ideas and interactions between people. As social beings, the extent that we reach one another is typically larger than expected. This simluation ultimately aims to show how our daily decisions affect our surrounding environment, in other words, our Sphere of Influence.</p>
-								<p>This project was built using vanilla Javascript, Canvas, HTML, and CSS. Canvas is the main visual on the page that renders the space and objects for this demonstration. The simulation that runs within the canvas uses an array of sphere objects with unique properties to demonstrate one of four given scenarios. Spheres use collision detection to "bounce" off of the boundaries of the canvas and other spheres. Once a collision occurs, conditionals manipulate the attributes of the colliding spheres.</p>
+								<h4 class="major">Spheres of Influence</h4>
+								<span class="image main"><img src="images/spheres.gif" alt="" /></span>
+								<p>A data simulation meant to visualize the virality of both ideas, influence, and interactions between people represented as spheres. As social beings, the extent that we reach one another is typically larger than expected. This simluation ultimately aims to show how our daily decisions affect our surrounding environment.</p>
+								<p>Spheres of Influence was built using vanilla Javascript, Canvas, HTML, and CSS. Canvas is the main visual on the page that renders the space and objects for this demonstration. The simulation that runs within the canvas uses an array of sphere objects with unique properties to demonstrate one of four given scenarios. Spheres use collision detection to "bounce" off of the boundaries of the canvas and other spheres. Once a collision occurs, conditionals manipulate the attributes of the colliding spheres.</p>
+								<p>
+									<a href="https://nick-barr.github.io/SpheresOfInfluence/">Website  | </a>
+									<a href="https://github.com/nick-barr/SpheresOfInfluence">Code</a>
+								</p>
 								
-								<h4 class="major">PillowCamp</h5>
-								<span class="image main"><img src="images/pic02.jpg" alt="" /></span>
-								<p>PillowCamp is a fullstack, single-page web application inspired by Hipcamp. Hipcamp is a booking service that provides access to campgrounds, open fields, cabins, and homes owned by owners who value nature. This web application clone has several features. These include allowing users to create, read, update, and destroy bookings for spots. They are able to leave reviews for spots when logged in. Additionally, there is the ability to search and filter based on pre-defined lists.</p>
-								<p>Users are able to reserve, update, and cancel bookings made through PillowCamp. Logic has been added to the frontend date input to require all minimum start dates to be a day after today. Checkout dates must be at least one day ahead of the check-in date. To create a booking, a user must be logged into a current session. If a user tried to create a booking, a modal would pop-up depending on whether a currentUser was found.
-
-									Bookings can then be managed at the Profile/:id of each User. Details for an existing booking will render in a reservation form allowing users to modify check-in, check-out, and number of guests arriving. Cancellations trigger a modal to ensure that is the correct action they wanted to take.</p>
+								<h4 class="major">PillowCamp</h4>
+								<span class="image main"><img src="images/pillowcamp.gif" alt="" /></span>
+								<p>PillowCamp is a fullstack, single-page web application build on React/Redux for the frontend and Rails & PostgreSQL to manage the backend and database. The SPA is inspired by Hipcamp; a booking service that provides access to campgrounds, open fields, cabins, and homes owned by owners who value nature. This web application clone has several features. These include allowing users to create, read, update, and destroy bookings for spots. They are able to leave reviews for spots when logged in. Additionally, there is the ability to search and filter based on pre-defined lists.</p>
+								<p>Users are able to reserve, update, and cancel bookings made through PillowCamp. Logic has been added to the frontend date input to require all minimum start dates to be a day after today. Checkout dates must be at least one day ahead of the check-in date. To create a booking, a user must be logged into a current session. If a user tried to create a booking, a modal would render to require a currentUser to be int the state.</p>
+								<p>Bookings can then be managed at the Profile/:id of each User. Details for an existing booking will render in a reservation form allowing users to modify check-in, check-out, and number of guests arriving. Cancellations trigger a modal to ensure that is the correct action they wanted to take.</p>
+								<p>
+									<a href="http://pillowcamp.herokuapp.com/#/">Website  | </a>
+									<a href="https://github.com/nick-barr/PillowCamp">Code</a>
+								</p>
 								
-								<h4 class="major">A Thousand miles</h5>
-								<span class="image main"><img src="images/pic02.jpg" alt="" /></span>
-								<p>A Thousand Miles is a roadtrip planning web application that allows users to plan a trip through interactively drawing on a map. Users can create custom itineraries and add their favorite attractions.</p>
-								<p>A Thousand Miles' goal is to give the user an easy way to find attractions to visit when planning a road trip or vacation. Users will be able to create an account, log in, or sign in with a demo user. Once the user logs in, they will be prompted to create an itinerary for their trip. The user can then put in their starting address (defaulted to the address entered during sign up) and final destination. Users will then be able to draw a line between their start and end destinations that represents the general path they would like to travel. Once the line is drawn, a list of tourist attractions will population along the drawn path for the user to add to their itineray.</p>
+								<h4 class="major">A Thousand miles</h4>
+								<span class="image main"><img src="images/thousand.gif" alt="" /></span>
+								<p>A Thousand Miles is a roadtrip planning web application built on a MERN stack. The application gives the user an easy way to find attractions to visit when planning a road trip or vacation. Users are given the ability to draw a path between a destination and end point.</p>
+								<p>  Users will be able to create an account, log in, or sign in with a demo user. Once the user logs in, they will be prompted to create an itinerary for their trip. The user can then put in their starting address (defaulted to the address entered during sign up) and final destination. Users will then be able to draw a line between their start and end destinations that represents the general path they would like to travel. Once the line is drawn, a list of tourist attractions will population along the drawn path for the user to add to their itineray. Custom itineraries can be created and added to list of favorite attractions.</p>
+								<p>
+									<a href="http://a-thousand-miles.herokuapp.com/#/">Website  | </a>
+									<a href="https://github.com/nick-barr/A-Thousand-Miles">Code</a>
+								</p>
 							</article>
 
-						<!-- Contact -->
+							<!-- Contact -->
 							<article id="contact">
 								<h2 class="major">Send a Message</h2>
 
